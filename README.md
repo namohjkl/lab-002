@@ -107,8 +107,6 @@
   
 ## Запуск 
 
-mkdir -p build
-g++ -std=c++17 -Wall -Wextra -pedantic -Iinclude src/*.cpp -o build/lab2.exe
 ./build/lab2.exe
 
 Проверка компилятора:
