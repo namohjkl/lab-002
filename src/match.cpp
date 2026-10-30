@@ -6,9 +6,12 @@ static const char* ToString(Match::State s)
 {
     switch (s)
     {
-        case Match::State::Planned:    return "Planned";
-        case Match::State::InProgress: return "InProgress";
-        case Match::State::Finished:   return "Finished";
+        case Match::State::Planned:    
+            return "Planned";
+        case Match::State::InProgress:
+            return "InProgress";
+        case Match::State::Finished:  
+            return "Finished";
     }
     return "Unknown";
 }
@@ -32,12 +35,12 @@ bool Match::Start()
 {
     if (m_state != State::Planned)
     {
-        std::cout << "[رفض] Can't start: match is not Planned\n";
+        std::cout << "Cant start, match is not Planned\n";
         return false;
     }
     if (m_p1 == nullptr || m_p2 == nullptr)
     {
-        std::cout << "[رفض] Can't start: players are not set\n";
+        std::cout << "Cant start players are not set\n";
         return false;
     }
 
